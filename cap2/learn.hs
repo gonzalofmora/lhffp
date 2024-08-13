@@ -1,4 +1,4 @@
--- learn.hs
+-- Learn.hs
 
 module Learn where
 
@@ -11,3 +11,5 @@ module Learn where
 x = 7
 y = 10
 f = x + y
+
+-- Diferencia entre let y where

@@ -1,6 +1,6 @@
 module Print3Broken where
-import GHC.Settings.Utils (getRawBooleanSetting)
 
+{-
 printSecond :: IO ()
 printSecond = do
     putStrLn greeting
@@ -10,3 +10,4 @@ main = do
     putStrLn greeting
     printSecond
     where greeting = "Yarrrrr"
+-}

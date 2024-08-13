@@ -1,3 +1,6 @@
+{-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
+{-# HLINT ignore "Use id" #-}
+{-# HLINT ignore "Redundant lambda" #-}
 module GreetIfCool2 where
 import Distribution.Backpack.PreModuleShape (mixLinkPreModuleShape)
 
@@ -64,6 +67,20 @@ f' (a, b) (c, d) = mixed
 
 
 x = (+)
-
 f'' xs = x 1 w
   where w = length xs
+
+f''' = \x -> x
+
+
+f'''' (a, b) = a
+
+{-
+Match the function names to their types
+
+1) c
+2) b
+3) a
+4) d
+
+-}

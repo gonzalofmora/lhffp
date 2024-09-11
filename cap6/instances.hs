@@ -440,3 +440,16 @@ mySort = sort
 signifier :: Ord a => [a] -> a
 signifier xs = head (mySort xs)
 -}
+
+-- Type-Kwon-Do Two: Electric Typealoo
+
+chk :: Eq b => (a -> b) -> a -> b -> Bool
+chk aToB a b = aToB a == b
+
+arith :: Num b
+      => (a -> b)
+      -> Integer
+      -> a
+      -> b
+arith aToB int a = aToB a + fromInteger int
+

@@ -99,3 +99,6 @@ foldBool' x y z
   | z         = x
   | otherwise = y
 
+g :: (a -> b) -> (a, c) -> (b, c)
+g aToB (a, c) = (aToB a, c)
+

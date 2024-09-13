@@ -1,6 +1,7 @@
 {-# OPTIONS_GHC -Wno-unrecognised-pragmas #-}
 {-# HLINT ignore "Redundant bracket" #-}
 {-# HLINT ignore "Use uncurry" #-}
+{-# HLINT ignore "Use if" #-}
 module TupleFunctions where
 
 addEmUp2 :: Num a => (a, a) -> a
@@ -44,3 +45,16 @@ f :: (a, b, c)
   -> ((a, d), (c, f))
 f (a, b, c) (d, e, f) = ((a, d), (c, f))
 
+-- Uso de case _ of
+
+pal xs =
+  case xs == reverse xs of
+    True  -> "yes"
+    False -> "no"
+
+-- Acá el where está por si hay que reutilizar la y
+pal' xs =
+    case y of
+        True  -> "yes"
+        False -> "no"
+    where y = xs == reverse xs

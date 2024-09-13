@@ -4,6 +4,7 @@
 {-# HLINT ignore "Collapse lambdas" #-}
 module Exercises where
 
+
 {-
 Exercises: Type Matches
 
@@ -94,3 +95,17 @@ kessel = undefined
 
 f' :: a -> a -> a 
 f' x _ = x
+
+
+{-
+Chapter exercises.
+
+Multiple Choice
+
+1) c
+2) a
+3) b
+4) c
+
+-}
+
